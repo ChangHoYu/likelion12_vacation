@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import './App.css';
-import { useGetData } from './hooks/useGetData';
+import { useGetData } from '../hooks/useGetData';
 
 export default function Get() {
   // const [isLoading, setIsLoading] = useState(null);

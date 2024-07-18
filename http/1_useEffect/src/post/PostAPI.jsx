@@ -1,46 +1,8 @@
 import { useState } from 'react';
-import { instance } from './axios/http';
+import { instance } from '../axios/http';
 
-export default function Post() {
-  /**
-   * POST, PATCH, PUT <- 기본적으로 (1)입력을 받고 (2)입력 검증을 함
-   * (1) 이건 할 만 하다
-   * (2) 이게 좀 어렵다
-   *
-   * (1) 입력 받기
-   * 1. 개별 상태
-   * 2. 객체
-   * 3. new FormData()
-   */
-  // 1. 개별 상태
-  // const [title, setTitle] = useState('');
-  // const [body, setBody] = useState('');
-
-  //2 객체
-  // const [input, setInput] = useState({
-  //   title: '',
-  //   body: '',
-  //   userId: 1,
-  // });
+export default function PostAPI() {
   const [error, setError] = useState(null);
-
-  // 1. 개별 상태
-  // function titleHandler(e) {
-  //   setTitle(e.target.value);
-  // }
-
-  // function bodyHandler(e) {
-  //   setBody(e.target.value);
-  // }
-
-  // 2. 객체
-  // function inputHandler(identifier, e) {
-  //   e.preventDefault();
-  //   setInput(prev => ({
-  //     ...prev,
-  //     [identifier]: e.target.value,
-  //   }));
-  // }
 
   async function submitHandler(e) {
     e.preventDefault();

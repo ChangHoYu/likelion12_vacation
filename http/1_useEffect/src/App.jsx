@@ -1,13 +1,16 @@
-import { useState, useEffect } from 'react';
 import './App.css';
-import Get from './Get';
-import Post from './Post';
+import PostAPI from './post/PostAPI';
+import PostObject from './post/PostObject';
+import PostState from './post/PostState';
 
 function App() {
   return (
     <>
       {/* <Get /> */}
-      <Post />
+      {/* <Post /> */}
+      {/* <PostState /> */}
+      {/* <PostObject /> */}
+      <PostAPI />
     </>
   );
 }
