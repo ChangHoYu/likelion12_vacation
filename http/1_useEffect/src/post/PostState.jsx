@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { instance } from '../axios/http';
 
+/**
+ * 입력 종류가 많은 경우 상태와 핸들러함수가 대폭 많아지는 문제가 발생한다.
+ */
 export default function PostState() {
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');

@@ -9,6 +9,7 @@ export default function PostAPI() {
 
     // 3.new FormData()
     // 단 input태그에 name 속성이 필요하다
+    // 복잡한(많은) 값이 있을 때 유용하다.
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
     console.log(data);
